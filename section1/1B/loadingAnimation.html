@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Create a loading animation using css
-Add options to choose between size (large, small)
-Add options to choose between 2 colors
-Add options to modify speed (fast, slow)
- -->
-<!-- href="https://kit.fontawesome.com/e85309d4bc.css"-->
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--   <link rel="stylesheet"  crossorigin="anonymous"> -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Loading Animation</title>
     <style>
         body {
@@ -42,6 +36,11 @@ Add options to modify speed (fast, slow)
             opacity: 0;
         }
 
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+        }
+
+
         .spinner {
             position: absolute;
             top: 0;
@@ -51,9 +50,9 @@ Add options to modify speed (fast, slow)
             border-right: 90px solid transparent;
             border-top: 180px solid #CAF4A0;
             border-radius: 50%;
-            animation: spin 1s infinite linear; 
+            animation: spin 1s infinite linear;
             cursor: pointer;
-            
+
         }
 
         /* rgb(35, 98, 13, 0.5)) */
@@ -158,22 +157,44 @@ Add options to modify speed (fast, slow)
             <div class="circle">
                 <div class="spinner"></div>
             </div>
-
         </div>
 
 
-
-        <i class="fa-solid fa-turtle"></i>
         <div class="capsule">
-            <label for="speed"><input type="checkbox" name="speed" id="speed"></label>
-        </div>
-        <i class="fa-solid fa-rabbit-running"></i>
-        <div class="capsule"><label for="color"><input type="checkbox" id="color"></label></div>
-        <div class="capsule">
-            <label for="size">
-                <div class="toggle"><input type="checkbox" id="size" name="size"></div>
+            <label for="speed">
+                <div class="toggle">
+                    <input type="checkbox" name="speed" id="speed">
+                </div>
             </label>
         </div>
+        <span class="material-symbols-outlined">
+            fast_forward
+        </span>
+
+
+        <div class="capsule">
+            <label for="color">
+                <div class="toggle"><input type="checkbox" id="color">
+                </div>
+            </label>
+        </div>
+        <span class="material-symbols-outlined">
+            invert_colors
+        </span>
+
+
+        <div class="capsule">
+            <label for="size">
+                <div class="toggle"><input type="checkbox" id="size" name="size">
+                </div>
+            </label>
+        </div>
+        <span class="material-symbols-outlined">
+            format_size
+        </span>
+
+
+
     </main>
 
 
