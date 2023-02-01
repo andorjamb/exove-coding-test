@@ -5,6 +5,10 @@
 
 ### Section 1
 
+#### Segment 1B: CSS-Animated Loader
+
+Internal CSS, with a separate JavaScript file containing event handlers.
+
 #### Segment 1C : React Slider
 
 A simple app built with create-react-app. 
@@ -21,5 +25,7 @@ see htmlErrors.html for corrections
 
 ### Section 3
 
-#### Segment 3D : Basic Grid Layout with HTML and CSS
+#### Segment 3D : HTML and CSS Layout
+
+A basic HTML page formatted with a responsive CSS grid layout.
 
