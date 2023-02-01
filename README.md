@@ -21,3 +21,5 @@ see htmlErrors.html for corrections
 
 ### Section 3
 
+#### Segment 3D : Basic Grid Layout with HTML and CSS
+
