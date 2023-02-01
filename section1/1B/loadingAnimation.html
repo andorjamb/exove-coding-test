@@ -19,7 +19,6 @@
         }
 
         main {
-
             color: #CAF4A0;
             display: flex;
             flex-direction: column;
@@ -28,7 +27,6 @@
         }
 
         .container {
-
             margin-bottom: 3rem;
         }
 
@@ -52,10 +50,10 @@
             border-radius: 50%;
             animation: spin 1s infinite linear;
             cursor: pointer;
+            transition: 0.5s;
 
         }
 
-        /* rgb(35, 98, 13, 0.5)) */
         .circle {
             width: 180px;
             height: 180px;
@@ -63,22 +61,32 @@
             background: linear-gradient(to bottom right, rgba(50, 50, 50, 0.4) 10%, rgba(10, 30, 10, 0.3));
             border-radius: 50%;
             animation: dime 2s infinite linear;
+            animation-delay: 1.2s;
             box-shadow: inset 0 2px 5px 5px #CAF4A0;
+            transition: 0.5s;
         }
 
-        .spinner.slow {
-            animation-duration: 2.5s
+        .circle.stop {
+            animation: none;
+            transition: 0.5s;
+        }
+
+        .spinner.fast {
+            animation-duration: 0.1s
         }
 
         .spinner.violet {
-            border-top: 120px solid #CCAAFF;
+            border-left: 90px solid transparent;
+            border-right: 90px solid transparent;
+            border-top: 180px solid #CCAAFF;
+
         }
 
-        .spinner.small {
-            transform: scale(0.5);
+
+        .circle.small {
+            transform: scale3d(0.5, 0.5, 0.5);
             transition: 0.5s ease-in-out;
         }
-
 
         .capsule {
             position: relative;
@@ -98,14 +106,7 @@
 
         }
 
-        .capsule.checked {
-            position: absolute;
-            height: 45px;
-            width: 40px;
-            background-color: #CCAAFF;
-        }
-
-        .toggle {
+        label.toggle {
             position: absolute;
             top: 4px;
             left: 4px;
@@ -114,12 +115,21 @@
             height: 35px;
             width: 35px;
             border-radius: 40%;
+            transition: 0.5s;
         }
+
 
         .toggle.checked {
             transform: translateX(35px);
+            transition: 0.5s;
         }
 
+        .capsule.checked {
+            background-color: #CAF4A0;
+            box-shadow: inset 0 0 4px 7px #274F00;
+            transition-delay: 0.1s;
+            transition-duration: 0.9s;
+        }
 
         @keyframes spin {
             0% {
@@ -143,60 +153,46 @@
     </style>
 
 </head>
-<script>console.log('hey');
-    const spinner = document.querySelector("spinner");
-    const speed = document.querySelector("spinner");
-    const color = document.querySelector("color");
-    const size = document.querySelector("size");
-</script>
 
 <body>
     <header></header>
     <main>
         <div class="container">
-            <div class="circle">
+            <div class="circle" onclick="circleStop()">
                 <div class="spinner"></div>
             </div>
         </div>
 
-
         <div class="capsule">
-            <label for="speed">
-                <div class="toggle">
-                    <input type="checkbox" name="speed" id="speed">
-                </div>
+            <label class="toggle" for="speed">
+                <input type="checkbox" name="speed" id="speed" onchange="changeSpeed()">
             </label>
         </div>
         <span class="material-symbols-outlined">
             fast_forward
         </span>
 
-
         <div class="capsule">
-            <label for="color">
-                <div class="toggle"><input type="checkbox" id="color">
-                </div>
+            <label class="toggle" for="color">
+                <input type="checkbox" id="color" onchange="changeColor()">
             </label>
         </div>
         <span class="material-symbols-outlined">
             invert_colors
         </span>
 
-
         <div class="capsule">
-            <label for="size">
-                <div class="toggle"><input type="checkbox" id="size" name="size">
-                </div>
+            <label class="toggle" for="size">
+                <input type="checkbox" id="size" name="size" onchange="changeSize()">
+
             </label>
         </div>
         <span class="material-symbols-outlined">
             format_size
         </span>
 
-
-
     </main>
-
+    <script src="./loadingAnimation.js"></script>
 
 </body>
 
