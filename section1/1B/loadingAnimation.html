@@ -1,20 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Create a loading animation using css
+Add options to choose between size (large, small)
+Add options to choose between 2 colors
+Add options to modify speed (fast, slow)
+ -->
+<!-- href="https://kit.fontawesome.com/e85309d4bc.css"-->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://kit.fontawesome.com/e85309d4bc.css" crossorigin="anonymous">
+    <!--   <link rel="stylesheet"  crossorigin="anonymous"> -->
     <title>Loading Animation</title>
     <style>
+        body {
+            background: linear-gradient(to bottom, #274F00 40%, #23620D);
+            min-height: 100vh;
+        }
+
+        header {
+            height: 20vh;
+        }
+
+        main {
+
+            color: #CAF4A0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+
+            margin-bottom: 3rem;
+        }
+
+        input {
+            opacity: 0;
+        }
+
+        .spinner {
+            position: absolute;
+            top: 0;
+            height: 0;
+            width: 0;
+            border-left: 90px solid transparent;
+            border-right: 90px solid transparent;
+            border-top: 180px solid #CAF4A0;
+            border-radius: 50%;
+            animation: spin 1s infinite linear; 
+            cursor: pointer;
+            
+        }
+
+        /* rgb(35, 98, 13, 0.5)) */
+        .circle {
+            width: 180px;
+            height: 180px;
+            position: relative;
+            background: linear-gradient(to bottom right, rgba(50, 50, 50, 0.4) 10%, rgba(10, 30, 10, 0.3));
+            border-radius: 50%;
+            animation: dime 2s infinite linear;
+            box-shadow: inset 0 2px 5px 5px #CAF4A0;
+        }
+
+        .spinner.slow {
+            animation-duration: 2.5s
+        }
+
+        .spinner.violet {
+            border-top: 120px solid #CCAAFF;
+        }
+
+        .spinner.small {
+            transform: scale(0.5);
+            transition: 0.5s ease-in-out;
+        }
 
 
+        .capsule {
+            position: relative;
+            border-radius: 20px;
+            width: 80px;
+            height: 45px;
+            background-color: #274F00;
+            margin: 0.6rem 0;
+            box-shadow: inset 1px 1px 5px 1px rgba(10, 30, 10, 0.3);
+        }
 
+        .capsule:before {
+            position: absolute;
+            content: "";
+            height: 45px;
+            width: 40px;
+
+        }
+
+        .capsule.checked {
+            position: absolute;
+            height: 45px;
+            width: 40px;
+            background-color: #CCAAFF;
+        }
+
+        .toggle {
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            cursor: pointer;
+            background-color: #23620D;
+            height: 35px;
+            width: 35px;
+            border-radius: 40%;
+        }
+
+        .toggle.checked {
+            transform: translateX(35px);
+        }
+
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0)
+            }
+
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        @keyframes dime {
+            0% {
+                transform: rotate3d(0, 1, 0, 0)
+            }
+
+            100% {
+                transform: rotate3d(0, 1, 0, 360deg)
+            }
+        }
     </style>
+
 </head>
+<script>console.log('hey');
+    const spinner = document.querySelector("spinner");
+    const speed = document.querySelector("spinner");
+    const color = document.querySelector("color");
+    const size = document.querySelector("size");
+</script>
 
 <body>
+    <header></header>
+    <main>
+        <div class="container">
+            <div class="circle">
+                <div class="spinner"></div>
+            </div>
+
+        </div>
+
+
+
+        <i class="fa-solid fa-turtle"></i>
+        <div class="capsule">
+            <label for="speed"><input type="checkbox" name="speed" id="speed"></label>
+        </div>
+        <i class="fa-solid fa-rabbit-running"></i>
+        <div class="capsule"><label for="color"><input type="checkbox" id="color"></label></div>
+        <div class="capsule">
+            <label for="size">
+                <div class="toggle"><input type="checkbox" id="size" name="size"></div>
+            </label>
+        </div>
+    </main>
+
 
 </body>
 

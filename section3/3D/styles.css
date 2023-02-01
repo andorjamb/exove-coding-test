@@ -48,11 +48,6 @@ footer {
     background: linear-gradient(to bottom right, rgba(205, 205, 205, 1), rgba(240, 240, 240, 0.7));
 }
 
-footer::before {
-    box-shadow: 0 0 5px 5px black;
-
-}
-
 h1 {
     font-family: 'UnifrakturMaguntia', serif;
     font-size: 4rem;
