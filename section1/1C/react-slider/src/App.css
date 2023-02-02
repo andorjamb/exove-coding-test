@@ -39,8 +39,6 @@ h1 {
 }
 
 .slider {
-  /*   -webkit-appearance: none;
-  appearance: none; */
   width: 300px;
   height: 40px;
   border-radius: 10px;
@@ -69,15 +67,15 @@ h1 {
   margin: auto;
   line-height: 200px;
   text-align: center;
-
-
 }
 
 .display_h2 {
-  /*  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text; */
   font-size: 3rem;
   font-weight: 800;
   color: #23620D;
+}
+
+span {
+  font-style: italic;
+  color: #04AA6D;
 }

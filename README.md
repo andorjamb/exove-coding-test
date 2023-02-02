@@ -13,6 +13,10 @@ Internal CSS, with a separate JavaScript file containing event handlers.
 
 A simple app built with create-react-app. 
 The slider element controls the opacity of a div, with opacity change triggered on the mouse-up event. 
+Running the app:
+```
+cd ./section1/1C/react-slider && npm install && npm start
+``` 
 
 
 ### Section 2
