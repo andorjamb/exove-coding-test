@@ -16,16 +16,11 @@ insert into people (first_name, last_name) VALUES ('John', 'Smith'),('Mary', 'Jo
 insert into phones (user_id, number) VALUES (2,'+1 213 621 0002'),(2, '+1 800 444 4444'),(1,'+1 604 444 4444'), (1, '+44 20 8759 9036'),(4, '+358 50 333 3333'),(5,'+46 771 793 336');
 
 /* Query */
-
-
-SELECT CONCAT(first_name, " ", last_name) AS name, DT.numbers AS numbers
+SELECT CONCAT(first_name, " ", last_name) AS name, COALESCE(DT.numbers, 'N/A') AS numbers
 FROM people
-LEFT JOIN (SELECT GROUP_CONCAT(COALESCE(number, 'N/A')) AS numbers, user_id 
+LEFT JOIN (SELECT GROUP_CONCAT(phones.number) AS numbers, user_id 
 FROM phones 
 GROUP BY user_id) AS DT
 ON people.id = DT.user_id
 ORDER BY last_name;
-
-/* WORKS */
-
 

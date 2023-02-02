@@ -23,11 +23,11 @@ cd ./section1/1C/react-slider && npm install && npm start
 
 #### Segment 2B : SQL Query
 
-see section2/2B/tables.sql  in repo
+see ./section2/2B/tables.sql  in repo
 
 #### Segment 2C : HTML errors
 
-see section2/2C/htmlErrors.html  in repo
+see ./section2/2C/htmlErrors.html  in repo
 
 
 ### Section 3
@@ -35,4 +35,5 @@ see section2/2C/htmlErrors.html  in repo
 #### Segment 3D : HTML and CSS Layout
 
 A basic HTML page formatted with a responsive CSS grid layout.
+See ./section3/3D/index.html
 
