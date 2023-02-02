@@ -17,10 +17,13 @@ The slider element controls the opacity of a div, with opacity change triggered 
 
 ### Section 2
 
+#### Segment 2B : SQL Query
+
+see section2/2B/tables.sql  in repo
+
 #### Segment 2C : HTML errors
 
-see htmlErrors.html for corrections
-
+see section2/2C/htmlErrors.html  in repo
 
 
 ### Section 3
