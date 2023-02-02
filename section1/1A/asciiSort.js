@@ -1,6 +1,7 @@
 /** Write a sorting algorithm that sorts strings based on the ASCII code of the third letter first, then second letter and then the first letter.
 */
 
+/* test changes */
 const stringArray = ['BOAT', 'Locomotive', 'Poet', 'Accelerate', 'GOLF', 'ACCIDENTAL', 'Submarine', 'ghost'];
 main();
 
