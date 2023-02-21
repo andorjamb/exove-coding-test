@@ -14,10 +14,10 @@ node_modules/
 netlify.toml
 
 # private files
-/section1/1A
-/section3/3A
-/section3/3B
-/section3/3C
+/section1/1A/*
+/section3/3A/*
+/section3/3B/*
+/section3/3C/*
 
 
 
