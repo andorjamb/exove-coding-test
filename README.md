@@ -12,7 +12,7 @@ Warning: high speed not recommended for photosensitive viewers
 
 ##### Loader screenchot
 
-![screenshot]https://github.com/andorjamb/exove-coding-test/blob/master/screenshot_1b.png)
+![screenshot](https://github.com/andorjamb/exove-coding-test/blob/master/screenshot_1b.png)
 
 
 #### Segment 1C : React Slider
@@ -26,7 +26,7 @@ cd ./section1/1C/react-slider && npm install && npm start
 
 ##### Slider screenchot
 
-![screenshot](https://github.com/andorjamb/exove-coding-test/blob/master/screenshot_c1.png)
+![screenshot](https://github.com/andorjamb/exove-coding-test/blob/master/screenshot_1c.png)
 
 ### Section 2
 
