@@ -10,7 +10,7 @@
 The loader is a simple CSS animation included as internal CSS, with a separate JavaScript file containing event handlers for changing the loader's speed and appearance. 
 Warning: high speed not recommended for photosensitive viewers
 
-##### Loader screenchot
+##### Loader screenshot
 
 ![screenshot](https://github.com/andorjamb/exove-coding-test/blob/master/screenshot_1b.png)
 
@@ -24,7 +24,7 @@ Running the app:
 cd ./section1/1C/react-slider && npm install && npm start
 ``` 
 
-##### Slider screenchot
+##### Slider screenshot
 
 ![screenshot](https://github.com/andorjamb/exove-coding-test/blob/master/screenshot_1c.png)
 
