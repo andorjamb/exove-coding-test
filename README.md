@@ -38,11 +38,18 @@ see ./section2/2B/tables.sql  in repo
 
 see ./section2/2C/htmlErrors.html  in repo
 
+I have improved the consistency and responsivity of heading styles, also removing headings in favor of paragraph elements where appropriate. I have improved accessibility by adding image-alts and correct input labels and modifying tabindex. 
+
 
 ### Section 3
 
 #### Segment 3D : HTML and CSS Layout
 
-A basic HTML page formatted with a responsive CSS grid layout.
+A basic HTML page formatted with a responsive CSS grid layout. I have used two breakpoints to reduce grid columns depending on screen size.
+
 See ./section3/3D/index.html
+
+##### Grid layout screen shot
+
+![screenshot](https://github.com/andorjamb/exove-coding-test/blob/master/screenshot_3d.png)
 
