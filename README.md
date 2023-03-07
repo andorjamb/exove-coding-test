@@ -26,7 +26,7 @@ cd ./section1/1C/react-slider && npm install && npm start
 
 ##### Slider screenshot
 
-![screenshot](https://github.com/andorjamb/exove-coding-test/blob/master/screenshot_1c.png | width=200)
+<img src="https://github.com/andorjamb/exove-coding-test/blob/master/screenshot_1c.png" alt="screenshot" height="200px">
 
 ### Section 2
 
